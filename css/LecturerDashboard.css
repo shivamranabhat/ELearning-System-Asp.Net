@@ -1,0 +1,121 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --violet: #1e00ff;
+    --blue: #5789d3;
+    --gradient: linear-gradient(90deg, var(--violet), var(--blue));
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+    html::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    html::-webkit-scrollbar-track {
+        background: #333;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        background: #fff;
+        border-radius: 5rem;
+    }
+
+
+
+section {
+    padding: 2rem 7%;
+}
+
+.container {
+    background: #fff;
+    position:relative;
+    top:150px;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    background: #130861;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+    .btn:hover {
+        background: #4f41bb;
+    }
+
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+    .home .content {
+        flex: 1 1 40rem;
+    }
+
+    .home .image {
+        flex: 1 1 40rem;
+    }
+
+        .home .image img {
+            width: 100%;
+        }
+
+    .home .content h3 {
+        color: transparent;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 4rem;
+    }
+
+    .home .content p {
+        padding: .5rem 0;
+        font-size: 1.7rem;
+        color: #666;
+    }
+
+/* media queries  */
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    body {
+        padding: 1.5rem;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+
+
+@media (max-width:400px) {
+
+    html {
+        font-size: 50%;
+    }
+}
